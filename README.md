@@ -1,5 +1,7 @@
 # M2_project_scripts
 
+Important note : **Not all scricpt has been cleaned and properly commented yet**
+
 Script used in my 2023 Master degree internship project.
 
 This aimed to build co-expression network from single cell RNA-seq data.
