@@ -13,6 +13,8 @@ Input to the co-expression computation is a R `list` with 2 elements :
 
 ![Alt Text](workflow.png)
 
+# Data availability
+
 Data used can be found at the Gene Expression Omnibus (https://www.ncbi.nlm.nih.gov/geo/) (GEO) archives, Synapse archive(https://www.synapse.org/#), or through the links provided in the table below. Noticing that ROSMAP data had to be requested and that metadata files related to the Lau dataset were requested to the authors of the related publication and were not available in the GEO archive at the date of the study. The GO annotations file used for the GBA analysis is the human annotation file of the 2022-12-04 release and can be found in the GO FTP archive (http://release.geneontology.org/).
 
 | Dataset name | GEO/SynID/link                    |
