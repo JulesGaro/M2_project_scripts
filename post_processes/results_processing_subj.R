@@ -98,4 +98,4 @@ dataset_tibbles <- datasets %>% lapply(function(ds) {
 })
 names(dataset_tibbles) <- datasets
 
-save(dataset_tibbles, file = "global_results_subj.rvar")
+save(dataset_tibbles, file = "global_results_subj.RData")

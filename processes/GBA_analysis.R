@@ -1,4 +1,4 @@
-source("../functions/EGAD_func.R")
+source("../functions/GBA_func.R")
 
 library(EGAD)
 library(tidyverse)
@@ -38,7 +38,6 @@ for (dataset in datasets) {
 
     print(paste("compute cell neighbor voting for", dataset))
     # Compute neighbor voting for cell level networks
-    s <- Sys.time()
     cell_aurocs <- cell_types %>% mclapply(function(ct) {
         neighbor_voting(
             genes.labels = ct_annotations[[ct]],
@@ -47,12 +46,10 @@ for (dataset in datasets) {
         )
     }, mc.cores = 6)
     names(cell_aurocs) <- cell_types
-    print(Sys.time() - s)
     output$cell_coex_mats <- NULL
 
     print(paste("compute subj neighbor voting for", dataset))
     # Compute neighbor voting for cell level networks
-    s <- Sys.time()
     subj_aurocs <- cell_types %>% mclapply(function(ct) {
         neighbor_voting(
             genes.labels = ct_annotations[[ct]],
@@ -61,7 +58,6 @@ for (dataset in datasets) {
         )
     }, mc.cores = 6)
     names(subj_aurocs) <- cell_types
-    print(Sys.time() - s)
 
     rm(output)
     rm(ct_annotations)
