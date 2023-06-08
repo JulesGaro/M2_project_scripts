@@ -1,6 +1,6 @@
 #!/usr/bin/env Rscript
 
-source("../functions/coexpression_func.R")
+source("../functions/processing_func.R")
 library(dplyr)
 library(stringr)
 library(tibble)

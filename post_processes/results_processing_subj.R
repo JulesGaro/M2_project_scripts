@@ -1,6 +1,5 @@
 #!/usr/bin/env Rscript
 
-source("../functions/coexpression_func.R")
 library(dplyr)
 library(tibble)
 library(Matrix)

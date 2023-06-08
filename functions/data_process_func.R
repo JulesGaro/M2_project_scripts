@@ -1,6 +1,7 @@
 # Functions used to clean and normalize datasets before performing
 # co-expression analysis
 library(dplyr)
+library(Matrix)
 
 clean_ctmat <- function(ctmat, gene_thr = 0.1, sample_thr = 2) {
   # Filter out Genes and Cells from ctmat that do not pass given treshold

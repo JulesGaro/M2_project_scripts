@@ -1,3 +1,9 @@
+library(tibble)
+library(parallel)
+library(dplyr)
+library(Matrix)
+library(data.table)
+
 compute_preservation <- function(mat1, mat2) {
   # compute the preservation between 2 binary matrices
   #
