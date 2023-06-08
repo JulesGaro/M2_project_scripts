@@ -1,4 +1,4 @@
-# M2_project_scripts
+# Master 2 in Bioinformatics, University of Rennes, Internship project.
 
 Important note : **Not all scricpt has been cleaned and properly commented yet**
 
