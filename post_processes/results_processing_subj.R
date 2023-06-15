@@ -6,10 +6,12 @@ library(Matrix)
 library(stringr)
 
 datasets <- c("lau", "lim", "nagy", "pineda", "ramos", "rosmap", "velmeshev")
+path_repro <- ""
+path_preserv <- ""
 
 dataset_tibbles <- datasets %>% lapply(function(ds) {
     # Load preserv data
-    setwd(path)
+    setwd(path_preserv)
     load(paste(ds, "preserv.rvar", sep = "_"))
     preserv_data <- output
     rm(output)
@@ -39,7 +41,7 @@ dataset_tibbles <- datasets %>% lapply(function(ds) {
     }
 
     # add repro data to the created tibbles
-    setwd(path)
+    setwd(path_repro)
     files <- list.files()
     files <- files[grepl(ds, files)]
     files <- files[grepl("repro_subj", files)]
